@@ -2,17 +2,13 @@ const generateRandomSet = () => {
     const uniqueRandomNumbers = new Set();
 
     while (uniqueRandomNumbers.size < 10000) {
-      const randomNumber = Math.floor(Math.random() * 10000) + 1;
-      uniqueRandomNumbers.add(randomNumber);
+      uniqueRandomNumbers.add(Math.floor(Math.random() * 10000) + 1);
     }
 
-    return Array.from(uniqueRandomNumbers);
+    return uniqueRandomNumbers;
   };
 
-  module.exports = {
-    generateRandomSet,
-  };
+// This console.log() will log the unique Set via `node main.js`
+  console.log(Array.from(generateRandomSet()));
 
-
-
-  generateRandomSet();
+module.exports = { generateRandomSet };
