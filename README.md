@@ -6,7 +6,7 @@ This is a small repository that includes a simple project configured via NPM (No
 
 `Write a program that generates a list of 10,000 numbers in random order each time it is run. Each number in the list must be unique and be between 1 and 10,000 (inclusive).`
 
-My solution was implemented via TDD (Test Driven Development) and can be verified through either setting up this repository locally, or by running the code in `main.js` on it's own.
+My solution was implemented via TDD (Test Driven Development) and can be verified through either setting up this repository locally, or by running the code in `main.js` on its own.
 
 a) Running via `node`: If node is installed on your system, simply type `node main.js` within the repository that contains the file and the console will print an array converted from the set.
 
