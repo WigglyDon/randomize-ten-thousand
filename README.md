@@ -8,26 +8,30 @@ This is a small repository that includes a simple project configured via NPM (No
 
 My solution was implemented via TDD (Test Driven Development) and can be verified through either setting up this repository locally, or by running the code in `main.js` on its own.
 
-a) Running via `node`: If node is installed on your system, simply type `node main.js` within the repository that contains the file and the console will print an array converted from the set.
+### Running the Code
 
-b) If you want to run the tests locally, you will need to clone this repository and install dependencies.
+1. **Node:**
+   - If Node is installed on your system, run the following command within the repository:
+     ```
+     node main.js
+     ```
+   - This will print an array converted from the set.
 
-1. Clone using preferred method `git clone <remote url>`
-2. Install dependencies via NPM `npm i`
-3. Run the jest test runner using `npm test`
+2. **Testing:**
+   - Clone the repository: `git clone <remote url>`
+   - Install dependencies: `npm i`
+   - Run Jest test runner: `npm test`
+   - This will print the results of the `main.test.js` to the console.
 
-This will print the results of the `main.test.js` to the console.
+### Additional Reading
 
-4. (optional) Similarly, method A will also work at this point to compare.
+Two notable things about the implementation:
 
-# Additional Reading!
+1. **CommonJS Syntax:**
+   - I used CommonJS syntax for ease of setup and compatibility across local configurations.
 
-There are two notable things I'd like to point out about how I've done this that are worth consideration.
+2. **Use of Set:**
+   - I opted for a `Set` instead of an array in `generateRandomSet` to ensure unique values. The conversion to an array in `main.js` is for better console output readability.
 
-The first thing is the use of CommonJS syntax as opposed to a more modern ECMAScript. The only reason I chose to use this syntax is because I think that it is easier to set up and run the code on a wider variety of local configurations, and because I am intending to share this with potential employers, I would ideally like it to be easy for them to verify this on their own.
 
-The second thing I would like to point out is the usage of a [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) instead of simply using an array, and also why I am converting the `Set` to an array when calling it in `main.js`.
 
-A `Set` is a data set in Javascript which unlike an array, will only hold unique values. I found this more appropriate for the main method `generateRandomSet` because it ensures that there are no duplicates added into the result by mistake.
-
-The reason why the `Array.from()` method is being called on `generateRandomSet()` is to console log a more readable result when individually running the `main.js` file using `node main.js`. Without doing this, the terminal will not concatenate the result, printing each number of the `Set` on a new line and flood the console.
