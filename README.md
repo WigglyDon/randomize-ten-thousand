@@ -8,9 +8,9 @@ This is a small repository that includes a simple project configured via NPM (No
 
 My solution was implemented via TDD (Test Driven Development) and can be verified through either setting up this repository locally, or by running the code in `main.js` on it's own.
 
-A: Running via `node` => If node is installed on your system, simply type this command within the repository that contains the file and the console will print an array converted from the set (converted to be readable)
+a)   Running via `node` => If node is installed on your system, simply type this command within the repository that contains the file and the console will print an array converted from the set (converted to be readable)
 
-B: If you want to run the tests locally, you will need to clone this repository and install dependencies.
+b)   If you want to run the tests locally, you will need to clone this repository and install dependencies.
 
 1. Clone using preferred method `git clone <remote url>`
 2. Install dependencies via NPM `npm i`
