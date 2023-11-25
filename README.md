@@ -20,11 +20,11 @@ This will print the results of the `main.test.js` to the console.
 
 4. (optional) Similarly, method A will also work at this point to compare.
 
-# Additional Reading :)
+# Additional Reading!
 
 There are two notable things I'd like to point out about how I've done this that are worth consideration.
 
-The first thing is the use of CommonJS syntax as opposed to a more modern ECMAScript. The only reason I chose to use this syntax is because I think that it is easier to set up and run the code on a wider variety of local configurations, and because I am intending to share this with potential employers, I would ideally like it to be easy for them to verify this on their own :)
+The first thing is the use of CommonJS syntax as opposed to a more modern ECMAScript. The only reason I chose to use this syntax is because I think that it is easier to set up and run the code on a wider variety of local configurations, and because I am intending to share this with potential employers, I would ideally like it to be easy for them to verify this on their own.
 
 The second thing I would like to point out is the usage of a [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) instead of simply using an array, and also why I am converting the `Set` to an array when calling it in `main.js`.
 
