@@ -19,6 +19,7 @@ My solution was implemented via TDD (Test Driven Development) and can be verifie
 
 2. **Testing:**
    - Clone the repository: `git clone <remote url>`
+   - Change into newly created directory: `cd randomize-ten-thousand/`
    - Install dependencies: `npm i`
    - Run Jest test runner: `npm test`
    - This will print the results of the `main.test.js` to the console.
